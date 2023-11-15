@@ -7,3 +7,7 @@ def hello(request):
 def greet_name(request):
     context = {'name': 'Matej'}
     return render(request, 'greet_name.html', context)
+
+def greet_person(request, name):
+    context = {'name': name}
+    return render(request, 'greet_name.html', context)
