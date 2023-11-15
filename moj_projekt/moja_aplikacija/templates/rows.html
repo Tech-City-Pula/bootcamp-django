@@ -1,0 +1,5 @@
+{% extends 'base.html' %} {% block content %} {% if rows %} {% for i in rows %}
+<p>{{ i|add:"1" }}</p>
+{% endfor %} {% else %}
+<p>No rows found.</p>
+{% endif %} {% endblock %}
