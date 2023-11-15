@@ -49,6 +49,12 @@ django-admin startproject moj_projekt
 cd moj_projekt
 ```
 
+## Prvo pokrenemo potrebne migracije za django
+
+```bash
+python3 manage.py migrate
+```
+
 ## Za pokretanje servera koristis `manage.py` program dajuci mu komandu `runserver`
 
 ```bash
