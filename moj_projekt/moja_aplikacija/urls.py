@@ -1,6 +1,7 @@
 from django.urls import path
-from moja_aplikacija.views import hello
+from moja_aplikacija.views import hello, greet_name
 
 urlpatterns = [
-    path('', hello, name='my_view'),
+    path('', hello),
+    path('greet_name', greet_name),
 ]
