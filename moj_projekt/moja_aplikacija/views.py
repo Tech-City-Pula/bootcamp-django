@@ -9,5 +9,10 @@ def greet_name(request):
     return render(request, 'greet_name.html', context)
 
 def greet_person(request, name):
-    context = {'name': name}
+    context = {'name': name.capitalize()}
     return render(request, 'greet_name.html', context)
+
+def rows(request, rows):
+    rows = range(rows)
+    context = {'rows': rows}
+    return render(request, 'rows.html', context)
