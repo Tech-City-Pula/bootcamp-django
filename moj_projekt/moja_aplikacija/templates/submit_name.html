@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% block content %}
+<form action="{% url 'set_session' %}" method="get">
+	<input type="text" name="name" />
+	<input type="submit" value="Set Session" />
+</form>
+{% endblock %}

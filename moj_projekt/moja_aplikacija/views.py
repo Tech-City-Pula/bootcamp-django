@@ -16,3 +16,14 @@ def rows(request, rows):
     rows = range(rows)
     context = {'rows': rows}
     return render(request, 'rows.html', context)
+
+def set_session(request):
+    name = request.GET.get('name', 'Default Name')  # Replace 'Default Name' with a default value
+    request.session['name'] = name
+    return HttpResponse('Session set')
+
+def greet_name_from_session(request):
+    return render(request, 'greet_name_from_session.html')
+
+def submit_name(request):
+    return render(request, 'submit_name.html')
